@@ -2,4 +2,4 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://github.com/expertizewriter-cell/expertizewriter-site.git/</loc></url>
 </urlset>
-https://github.com/expertizewriter-cell/expertizewriter-site.git
+
