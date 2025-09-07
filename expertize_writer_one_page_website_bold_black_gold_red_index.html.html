@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Expertize Writer — Academic Writing Services</title>
+  <meta name="description" content="Expertize Writer — Academic writer & tutor. Essays, research papers, online class support, and editing. Faith-driven and committed to excellence." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0b0f;          /* near-black */
+      --card:#15151d;        /* dark card */
+      --gold:#d6b25e;        /* warm gold */
+      --gold-2:#f0d48a;      /* light gold */
+      --accent:#d14040;      /* bold red */
+      --text:#e9e9ef;        /* soft white */
+      --muted:#b7b7c8;       /* muted text */
+      --ring: #d1404044;     /* focus ring */
+      --radius: 18px;
+      --shadow: 0 10px 30px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;background:var(--bg);color:var(--text);font-family:Poppins,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial,sans-serif}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .container{width:min(1150px,92%);margin-inline:auto}
+
+    /* ===== HERO ===== */
+    .hero{position:relative;isolation:isolate;padding:84px 0 72px;background:radial-gradient(80% 80% at 80% 10%, rgba(209,64,64,.25), transparent 60%),
+      linear-gradient(180deg, rgba(209,64,64,.10), rgba(0,0,0,0) 60%)}
+    .hero:before{content:"";position:absolute;inset:0;z-index:-1;background:
+      radial-gradient(1200px 500px at 50% 100%, rgba(209,64,64,.22), transparent 55%)}
+    .badge{display:inline-flex;gap:10px;align-items:center;padding:8px 14px;border:1px solid rgba(214,178,94,.35);border-radius:999px;background:rgba(21,21,29,.6);backdrop-filter:saturate(140%) blur(6px);color:var(--gold-2);font-weight:600;font-size:.9rem}
+    .title{font-family:"Playfair Display",serif;font-size:clamp(36px,7vw,58px);line-height:1.05;margin:18px 0;color:var(--gold)}
+    .subtitle{max-width:780px;color:var(--muted);font-size:1.05rem}
+    .cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:26px}
+    .btn{padding:14px 22px;border-radius:14px;font-weight:700;letter-spacing:.2px;border:2px solid transparent;transition:.25s box-shadow,.25s transform,.25s background}
+    .btn-primary{background:linear-gradient(180deg, var(--gold-2), var(--gold));color:#1b1b1b}
+    .btn-primary:hover{box-shadow:0 8px 24px rgba(214,178,94,.35);transform:translateY(-1px)}
+    .btn-ghost{background:#0000;border-color:rgba(214,178,94,.35);color:var(--gold-2)}
+    .btn-ghost:hover{background:rgba(214,178,94,.08)}
+
+    /* ===== NAV ===== */
+    .nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+    .brand{display:flex;gap:10px;align-items:center;font-weight:800;letter-spacing:.6px}
+    .brand .logo{width:38px;height:38px;border-radius:12px;background:conic-gradient(from 220deg,var(--gold),#fff4,var(--gold),var(--accent));display:grid;place-items:center;box-shadow:0 4px 14px rgba(214,178,94,.25)}
+    .brand .logo svg{filter:drop-shadow(0 2px 6px rgba(0,0,0,.35))}
+    .nav a{opacity:.9}
+
+    /* ===== CARDS ===== */
+    .grid{display:grid;gap:18px}
+    @media(min-width:760px){.grid-3{grid-template-columns:repeat(3,1fr)}}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,.00));border:1px solid rgba(214,178,94,.18);border-radius:var(--radius);padding:20px;box-shadow:var(--shadow)}
+    .card h3{margin:6px 0 6px;font-family:"Playfair Display",serif;color:var(--gold)}
+    .card p{color:var(--muted)}
+
+    /* ===== SECTIONS ===== */
+    section{padding:56px 0}
+    .section-title{font-family:"Playfair Display",serif;color:var(--gold);font-size:clamp(24px,4vw,34px);margin:0 0 10px}
+    .section-sub{color:var(--muted);margin:0 0 26px}
+
+    /* ===== LISTS / TAGS ===== */
+    .tags{display:flex;flex-wrap:wrap;gap:10px}
+    .tag{border:1px solid rgba(214,178,94,.28);color:var(--gold-2);padding:8px 12px;border-radius:999px;font-weight:600;background:rgba(21,21,29,.5)}
+
+    /* ===== PRICING ===== */
+    .pricing{display:grid;gap:18px}
+    @media(min-width:900px){.pricing{grid-template-columns:repeat(3,1fr)}}
+    .price-card{position:relative}
+    .price{font-size:34px;font-weight:800;color:var(--gold)}
+    .note{font-size:.9rem;color:var(--muted)}
+
+    /* ===== FOOTER ===== */
+    footer{padding:40px 0 60px;border-top:1px dashed rgba(214,178,94,.25);color:var(--muted)}
+    .email{font-weight:700;color:var(--gold-2)}
+
+    /* ===== ACCESSIBILITY ===== */
+    .btn:focus-visible, a:focus-visible, button:focus-visible{outline:4px solid var(--ring);outline-offset:2px;border-radius:12px}
+  </style>
+</head>
+<body>
+  <!-- ===== NAVBAR ===== -->
+  <header class="container nav" aria-label="Main navigation">
+    <a class="brand" href="#">
+      <span class="logo" aria-hidden="true">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 19V5a2 2 0 0 1 2-2h8l6 6v10a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2Z" stroke="#1b1b1b" stroke-width="1.2" fill="white"/>
+          <path d="M14 3v4a2 2 0 0 0 2 2h4" stroke="#111" stroke-width="1.2"/>
+        </svg>
+      </span>
+      <span>Expertize&nbsp;Writer</span>
+    </a>
+    <nav style="display:flex; gap:18px">
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact" class="btn btn-ghost">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="container">
+      <span class="badge">Premium Help • On Time • Original</span>
+      <h1 class="title">Academic Writing Services that Stand Out</h1>
+      <p class="subtitle">Essays, research papers, editing, and online class support—delivered with excellence. Faith‑driven, detail‑oriented, and committed to your success.</p>
+      <div class="cta">
+        <a href="#contact" class="btn btn-primary">Get Help Now</a>
+        <a href="#services" class="btn btn-ghost">See What I Offer</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TRUST / HIGHLIGHTS ===== -->
+  <section class="container">
+    <div class="grid grid-3">
+      <div class="card">
+        <h3>On‑Time, Every Time</h3>
+        <p>No missed deadlines. Clear milestones and rapid communication so you always know the status.</p>
+      </div>
+      <div class="card">
+        <h3>Original & Custom</h3>
+        <p>Every order is crafted from scratch with credible sources and proper citation formats.</p>
+      </div>
+      <div class="card">
+        <h3>Confidential</h3>
+        <p>Your privacy matters. Secure, discreet, and professional from first message to final delivery.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section id="services" class="container">
+    <h2 class="section-title">Services</h2>
+    <p class="section-sub">Flexible, reliable support tailored to your course, rubric, and timeline.</p>
+    <div class="grid grid-3">
+      <div class="card">
+        <h3>Essays & Reports</h3>
+        <p>Argumentative, analytical, reflection papers, lab reports, and book/article reviews.</p>
+        <div class="tags">
+          <span class="tag">MLA</span>
+          <span class="tag">APA</span>
+          <span class="tag">Chicago</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Research Papers</h3>
+        <p>Topic refinement, annotated bibliographies, literature review, methods, and results synthesis.</p>
+        <div class="tags">
+          <span class="tag">Sources included</span>
+          <span class="tag">Citation check</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Editing & Proofreading</h3>
+        <p>Grammar, structure, clarity, formatting, and plagiarism‑free polish for your drafts.</p>
+        <div class="tags">
+          <span class="tag">Clarity</span>
+          <span class="tag">Structure</span>
+          <span class="tag">Formatting</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Online Class Support</h3>
+        <p>Module planning, discussion posts, quizzes, and weekly check‑ins to keep you on track.</p>
+        <div class="tags">
+          <span class="tag">Weekly plans</span>
+          <span class="tag">Reminders</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>PowerPoints & Presentations</h3>
+        <p>Clean slides, notes pages, data charts, and speaker flow that communicate with impact.</p>
+        <div class="tags">
+          <span class="tag">Visuals</span>
+          <span class="tag">Charts</span>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Coaching</h3>
+        <p>1‑on‑1 tutoring for brainstorming, outlining, and citing so you learn while you succeed.</p>
+        <div class="tags">
+          <span class="tag">Zoom</span>
+          <span class="tag">WhatsApp</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRICING ===== -->
+  <section id="pricing" class="container">
+    <h2 class="section-title">Simple Pricing</h2>
+    <p class="section-sub">Transparent rates. Rush options available. Request a custom quote for large or technical projects.</p>
+    <div class="pricing">
+      <div class="card price-card">
+        <h3>Editing / Proofreading</h3>
+        <p class="price">from $6 / page</p>
+        <p class="note">Grammar, clarity, and formatting polish.</p>
+      </div>
+      <div class="card price-card">
+        <h3>Standard Writing</h3>
+        <p class="price">from $12 / page</p>
+        <p class="note">Essays, responses, discussion posts.</p>
+      </div>
+      <div class="card price-card">
+        <h3>Research & Advanced</h3>
+        <p class="price">from $18 / page</p>
+        <p class="note">Research papers, reports, data‑heavy tasks.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="container">
+    <h2 class="section-title">What Clients Say</h2>
+    <div class="grid grid-3">
+      <div class="card"><p>“Reliable, fast, and always on point. My go‑to when deadlines are tight.”</p><p class="note">— A., Nursing Student</p></div>
+      <div class="card"><p>“Clean structure, strong sources, and great communication throughout.”</p><p class="note">— M., Business Major</p></div>
+      <div class="card"><p>“Editing made my paper shine. Cited perfectly and ahead of schedule.”</p><p class="note">— J., Grad Student</p></div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="container">
+    <h2 class="section-title">Contact</h2>
+    <p class="section-sub">Share your rubric, deadline, and page count for a fast quote.</p>
+    <div class="card" style="display:grid;gap:18px">
+      <div style="display:grid;gap:10px">
+        <div><strong>Email:</strong> <a class="email" href="mailto:expertizewriter@gmail.com">expertizewriter@gmail.com</a></div>
+        <div><strong>WhatsApp / SMS:</strong> <span class="email">+254 • +1 (optional)</span></div>
+      </div>
+      <form onsubmit="event.preventDefault(); alert('Thanks! Compose an email with your details to expertizewriter@gmail.com');" style="display:grid;gap:12px">
+        <div style="display:grid;gap:8px">
+          <label>First Name
+            <input required type="text" placeholder="Your name" style="width:100%;margin-top:6px;padding:14px 14px;border-radius:12px;border:1px solid rgba(214,178,94,.28);background:var(--card);color:var(--text)">
+          </label>
+          <label>Email
+            <input required type="email" placeholder="you@example.com" style="width:100%;margin-top:6px;padding:14px 14px;border-radius:12px;border:1px solid rgba(214,178,94,.28);background:var(--card);color:var(--text)">
+          </label>
+          <label>How can I help?
+            <textarea required rows="5" placeholder="Tell me about your assignment, deadline, and pages…" style="width:100%;margin-top:6px;padding:14px 14px;border-radius:12px;border:1px solid rgba(214,178,94,.28);background:var(--card);color:var(--text);"></textarea>
+          </label>
+        </div>
+        <button class="btn btn-primary" type="submit">Request a Quote</button>
+        <p class="note">By contacting, you agree all work delivered is original and for learning/reference use, with proper citation where required.</p>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container" style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px">
+      <div>© <span id="y"></span> Expertize Writer. All rights reserved.</div>
+      <div>Faith‑driven • Excellence‑focused • Confidential</div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
